@@ -24,6 +24,8 @@ cups will list the printer as `Canon G5000 series`
 
 ### Debian, Ubuntu, etc.
 
+debian wiki: https://wiki.debian.org/Canon
+
 1. canon-europe.com
 2. support
 3. drivers
