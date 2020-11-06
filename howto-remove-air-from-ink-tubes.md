@@ -7,6 +7,12 @@ Two problems:
 1. The remaining ink in the tubes will dry and clog the tubes.
 2. The print cartridges have no more ink supply, and if you continue to print, the cartridges will dry out.
 
+## Simple Solution
+
+Printer menu > Maintenance > Ink flush
+
+While the ink flush is running, you can open the printer cover, and watch the ink tubes being filled with ink. When all tubes are filled, simply cut the printer's power supply to stop the ink flush, to avoid wasting too much ink.
+
 ## Warning
 
 This instruction comes without any warranty. If you break your printer, its your problem.
