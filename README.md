@@ -1,10 +1,72 @@
 # Canon Pixma G5050 printer
 
-## Note
-
-this is a private project, which is not affiliated with the printer manufacturer (Canon) in any way
+NOTE this is a private project, which is NOT affiliated with the printer manufacturer (Canon) in any way
 
 ## How to
+
+### How to actually prepare the printer for shipping
+
+the printer [manual](https://www.canon.co.uk/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_g_series/pixma-g5050.html?type=manuals) says:
+
+> **Transporting Your Printer**
+> 
+> When relocating the printer for changing your living place or repairing it, make sure of the following.
+> 
+> **Important**
+> 
+> * You cannot take ink out of ink tanks.
+
+actually, yes you can. simply open the four ink tanks,
+and rotate the printer, so that gravity can pull the ink outside.
+do this in a shower or bathtub, where you can easily clean up all the spilled ink.
+
+but for shipping, it is not necessary to remove all ink from the tanks:
+
+> * Check if the tank cap is completely inserted. If the ink tank cover is not completely closed, insert the
+tank cap properly.
+
+actually, this is WRONG.
+
+when we close the two blue tank caps, then we open the small valves for ink and air.
+when the air valves are open, and the printer is rotated, the ink will flow outside through the air tubes.
+when printing, the air tubes pull air into the ink tanks.
+
+for shipping, the two blue tank caps should be OPEN.
+but as long as the tank caps are open, we cannot close the printer.
+so for shipping, we must remove the two blue tank caps, with some \*gentle\* force:
+pull the tank caps slightly apart, where they are mounted on the white plastic axis.
+
+we can open and close the two small ink valves also without the two blue tank caps,
+by rotating the white plastic axis.
+for shipping, make sure the tank caps would be in the OPEN position.
+
+> * Prepare for transporting the printer with the print head attached. This allows the printer to automatically
+cap the print head, thus preventing it from drying.
+> * Do not remove the print head. Ink may leak.
+
+yes. if you must remove the print heads, just let the ink flow back into the tanks.
+for this, rotate the printer, so gravity can pull the ink back into the tanks.
+then close the big ink valve. (repair-tools symbol)
+
+> * If ink stains the inside of the printer, wipe them using a soft cloth dampened with water.
+> * When transporting the printer, pack the printer in a plastic bag so that ink does not leak.
+> * Pack the printer in a sturdy box so that it is placed with its bottom facing down, using sufficient
+> protective material to ensure safe transport.
+> * Do not tilt the printer. Ink may leak.
+> * When a shipping agent is handling transport of the printer, have its box marked "THIS SIDE UP" to
+> keep the printer with its bottom facing down. Mark also with "FRAGILE" or "HANDLE WITH CARE".
+> * Please handle with care and ensure the box remains flat and NOT turned upside down or on its side, as
+> the printer may be damaged and ink in the printer may leak.
+
+hah! funny.
+
+the original package has those pretty "this side up" markings, but guess what?
+the average "shipping agent" simply does not care what the package says,
+and shipping machines will care even less.
+especially the shipping machines will throw the package,
+and its only a matter of time until the package lands on the wrong side.
+
+### How to remove air from ink tubes
 
 [How to remove air from ink tubes in a Canon Pixma G5050 tank printer](howto-remove-air-from-ink-tubes.md)
 
