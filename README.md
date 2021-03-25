@@ -66,6 +66,17 @@ and shipping machines will care even less.
 especially the shipping machines will throw the package,
 and its only a matter of time until the package lands on the wrong side.
 
+when you read the
+[packaging tips (sealing and labeling)](https://www.dhlsameday.com/Pages/resources/packaging_tips.aspx)
+of your shipping agent, they say something like:
+
+> While DHL cannot always abide by directions indicating the orientation of packages,
+> such as “This Side Up,” you can help to ensure that your package remains in the proper orientation during transit
+> by placing the waybill and paperwork on the top of the package.
+
+Special Handling Labels like "This Side Up" are only recommendations for the shipping agent,
+but you can not force an average shipping agent to ship your package with "this side up".
+
 ### How to remove air from ink tubes
 
 [How to remove air from ink tubes in a Canon Pixma G5050 tank printer](howto-remove-air-from-ink-tubes.md)
