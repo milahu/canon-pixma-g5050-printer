@@ -6,6 +6,29 @@ NOTE this is a private project, which is NOT affiliated with the printer manufac
 
 ### How to actually prepare the printer for shipping
 
+#### Preface
+
+This is an obvious PRODUCT DEFECT in the Canon Pixma G5050 printer,  
+more precise an instruction defect,  
+which in theory makes Canon [liable for damage](http://www.gesetze-im-internet.de/bgb/__823.html) from spilled ink on transport,  
+but Canon can get away with this, since a damage of "only" 250 EUR  
+is usually not worth the trouble of going to a court of law
+
+This tactic works especially well  
+in countries where there are no [class action lawsuits](https://en.wikipedia.org/wiki/Class_action)
+
+When confronted with this obvious product defect,  
+Canon will claim that the customer did something wrong,  
+and will refuse to admit its own fault,  
+and will also refuse to fix this problem for future generations.  
+On eBay, there is a constant supply of "defect pixma g5050" with spilled ink ...
+
+Instead, Canon will push you to buy a new printer for "only" 170 EUR,  
+and if you dont buy a new printer, you pay 40 EUR  
+for Canon's "sorry we cannot repair your printer" [abuse of monopoly](https://www.youtube.com/watch?v=6-3eGt_Oc-s)
+
+#### Howto
+
 the printer [manual](https://www.canon.co.uk/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_g_series/pixma-g5050.html?type=manuals) says:
 
 > **Transporting Your Printer**
@@ -82,6 +105,27 @@ but you can not force an average shipping agent to ship your package with "this 
 [How to remove air from ink tubes in a Canon Pixma G5050 tank printer](howto-remove-air-from-ink-tubes.md)
 
 ## Linux driver
+
+### Bug: temporary files are not deleted
+
+this is a bug in the linux driver. here is a workaround script:
+
+```bash
+#!/usr/bin/env bash
+# remove canon printer temp files older than x minutes
+# run this script as root
+minutes=5
+# temp_path: folder with the cnij* temporary files
+#temp_path=/var/tmp # arch linux
+temp_path=/var/tmp/*cups*/tmp # nixos linux
+while true
+do    
+  date    
+  find $temp_path -maxdepth 1 -name 'cnij*' -mmin +${minutes} \
+    -exec rm -v '{}' \;
+  sleep ${minutes}m
+done
+```
 
 ### Arch Linux
 
