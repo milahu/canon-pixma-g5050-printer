@@ -2,6 +2,14 @@
 
 NOTE this is a private project, which is NOT affiliated with the printer manufacturer (Canon) in any way
 
+## Contents
+
+* [How to actually prepare the printer for shipping](#how-to-actually-prepare-the-printer-for-shipping)
+* [How to remove air from ink tubes](#how-to-remove-air-from-ink-tubes)
+* [How to replace the mainboard](#how-to-replace-the-mainboard)
+* [Linux driver](#linux-driver)
+* [Printing costs](#printing-costs)
+
 ## How to
 
 ### How to actually prepare the printer for shipping
@@ -27,7 +35,7 @@ Instead, Canon will push you to buy a new printer for "only" 170 EUR,
 and if you dont buy a new printer, you pay 40 EUR  
 for Canon's "sorry we cannot repair your printer" [abuse of monopoly](https://www.youtube.com/watch?v=6-3eGt_Oc-s)
 
-#### Howto
+#### Prepare the printer for shipping
 
 the printer [manual](https://www.canon.co.uk/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_g_series/pixma-g5050.html?type=manuals) says:
 
@@ -103,6 +111,75 @@ but you can not force an average shipping agent to ship your package with "this 
 ### How to remove air from ink tubes
 
 [How to remove air from ink tubes in a Canon Pixma G5050 tank printer](howto-remove-air-from-ink-tubes.md)
+
+### How to replace the mainboard
+
+#### Preface
+
+Replacing the mainboard is simple, as long as you ignore the "advice" from canon.
+
+Canon (and its subcontractors) will claim:
+
+1. The mainboard must be calibrated, or even the firmware must be flashed onto the mainboard,
+otherwise the printer will not work at all.
+2. Only Canon can do this magic trick, so you absolutely must send your printer to a "certified" repair shop.
+
+Both of these claims are false. I lost around 180 EUR only for "repair attempts",
+which all were denied on the most ridiculous grounds.
+
+For example Canon will claim:
+
+1. The printer is a "total loss" because some milliliters of ink were spilled on transport,
+so just buy a new one.
+2. Canon's "safety" guidelines demand: If a customer has opened a device,
+Canon must do some ridiculously expensive "security" checks on the device,
+so the device is a "total loss" and you should buy a new one.
+But of course, to make the "Canon repair experience" more interesting,
+Canon will not tell you this up front,
+even if you tell them up front, that you have opened the device.
+
+One "repair attempt" usually costs 40 EUR.
+In my case, Canon stole my money (worth 50 EUR),
+and Canon stole both of my brand-new printheads (worth 80 EUR).
+
+So ... if you have too much money and too much time, go waste it on Canon "service"
+
+Otherwise:
+
+#### Replace the mainboard
+
+1. buy a new mainboard. price is around 80 EUR. you can only buy this from Canon and its subcontractors (same goes for the printheads)
+2. ignore Canon's claim of "only we can replace the mainboard"
+3. replace the mainboard yourself. I assume you have some experience in repairing electronics ...
+    * be careful with the new mainboard,
+      these boards are sensitive to ESD shocks (how i broke my mainboard).
+      Touch the mainboard only on the edges
+    * Put the black plastic frame on the mainboard, and only then connect all the wires.
+      The "flexible flat cables" are the hardest to connect, since the sockets require quite some force to close. be careful, dont slip
+4. if you want to test the printer before reassembly,
+you must trick two sensors: the lid-close sensor and the top paper-feed sensor.
+just stick a small piece of cardboard, where the plastic spike would go in
+5. before you start the printer, make sure you have
+    * inserted both printheads
+    * filled all ink tanks
+    * opened the large ink valve
+    * closed the two blue caps on the tanks (to open the two small ink valves)
+    * inserted some paper
+    * closed the lid (or tricked the sensor)
+6. connect power, start printer.
+the printer display will show some japanese text. for example:
+    * 印刷品質を向上させる調整を開始しますか? = Do you want to start making adjustments to improve print quality?
+        * はい = Yes
+        * いいえ = No
+    * a second yes/no question will appear, should be safe to hit "yes"
+7. now the printer will do some calibration.
+if you left the lid open, and are in a dark room, you can see red light inside the printer, just below the printheads.
+the printer will print around two pages for the calibration
+8. change language:
+    1. hit "settings" (button with repair tools symbol)
+    2. hit "right" + "ok"
+    3. hit "right" four times + "ok"
+    4. hit "right" until you see your language + "ok"
 
 ## Linux driver
 
